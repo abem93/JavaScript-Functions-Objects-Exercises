@@ -42,7 +42,7 @@ let student = {
   }
 };
 
-student.details()
+student.details()//timmy is 7 years old and is in second grade.
 
 
 /* Exercise 5: Advanced Object Methods
