@@ -42,5 +42,30 @@ let student = {
   }
 };
 
-
 student.details()
+
+
+/* Exercise 5: Advanced Object Methods
+    Implement an object named library with properties for books (as an array) and methods to addBook(bookName) and removeBook(bookName).
+    Ensure that the methods work correctly to add and remove books from the books array.
+    Commit: Once you've successfully implemented this object and its methods, commit the solution with the message: "Completed Exercise 5: Advanced Object Methods".*/
+
+let library = {
+  books: ['the barn', 'tinkers'],
+  addBook: function(item){
+    this.books.push(item)
+  },
+  removeBook: function(item){
+    let index = this.books.indexOf(item.toLowerCase());
+    if(index !== -1){
+    this.books.splice(index, 1)
+    };
+  }
+}
+
+console.log(library)
+console.log(library.books)
+library.addBook('trust');
+console.log(library.books);
+library.removeBook('trust');
+console.log(library.books);
