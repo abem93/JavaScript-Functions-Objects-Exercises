@@ -7,4 +7,8 @@
 function greetUser(name){
   return(`Hello ${name}, how are you?`);
 }
-console.log(greetUser('abraham'))
+console.log(greetUser('abraham'));
+
+let userGreeting = name => (`Hello ${name}, how are you?`);
+
+console.log(userGreeting('abe'));
