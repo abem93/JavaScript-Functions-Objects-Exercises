@@ -63,7 +63,7 @@ let library = {
   }
 }
 
-console.log(library)
+// console.log(library)
 console.log(library.books)
 library.addBook('trust');
 console.log(library.books);
